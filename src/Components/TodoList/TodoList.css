@@ -1,0 +1,16 @@
+.TodoList {
+    padding: 15px;
+}
+
+.TodoList--title {
+    margin: 15px 0px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #adbaeb; 
+}
+
+.TodoList--ul {
+    margin-top: 5px;
+    list-style: none;
+}
