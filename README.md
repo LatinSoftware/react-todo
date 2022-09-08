@@ -1,3 +1,5 @@
+# react-todo
+This project is an introduce to React, we're gonna make a simple todo task.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
