@@ -2,11 +2,11 @@ import React from 'react'
 import "./TodoItem.css"
 
 const TodoItem = ({todo}) => {
-    const {text} = todo;
+    const {text, completed} = todo;
     return ( 
         <li className='TodoItem'>
-            <label>
-                <input type="checkbox" />
+            <label className='TodoItem-checkbox__container' >
+                <input type="checkbox" checked={completed} className='TodoItem-checkbox' />
                 <span>{text}</span>
             </label>
         </li>
