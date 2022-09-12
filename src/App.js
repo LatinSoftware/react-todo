@@ -2,6 +2,7 @@ import React from 'react';
 
 
 import './App.css';
+import SearchBox from './Components/Search/Search';
 import { TodoCounter } from './Components/TodoCounter/TodoCounter';
 import TodoItem from './Components/TodoItem/TodoItem';
 import TodoList from './Components/TodoList/TodoList';
@@ -10,25 +11,26 @@ import TodoList from './Components/TodoList/TodoList';
 const todos = [
   {
     text: "tarea 1",
-    done: false,
+    completed: false,
   },{
     text: "tarea 2",
-    done: false,
+    completed: false,
   },{
     text: "tarea 3",
-    done: false,
+    completed: false,
   },{
     text: "tarea 4",
-    done: true,
+    completed: true,
   },
 ]
 
 function App() {
   return (
       <React.Fragment>
+        {/** Search Component **/}
+        <SearchBox />
         {/** Counter component **/}
         <TodoCounter />
-        {/** Search Component **/}
         {/** Todo List Component **/}
         <TodoList>
           {/** Todo Item Component **/}
