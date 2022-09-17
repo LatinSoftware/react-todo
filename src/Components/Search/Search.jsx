@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 import "./Search.css"
+import { useContext } from 'react';
+import { TodoContext } from '../../Context/TodoContext';
 
-const SearchBox = ({setSearchValue}) => {
+const SearchBox = () => {
+    const {setSearchValue} = useContext(TodoContext);
     const OnChangeHandler = (event) => {
         setSearchValue(event.target.value)
     }
