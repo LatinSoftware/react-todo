@@ -1,0 +1,20 @@
+.CreateButton {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d103fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;  
+    cursor: pointer;
+    transition: all 0.3s;
+    right: 10px;
+    z-index: 1;
+}
+
+.CreateButton--icon {
+    color: white;
+}
