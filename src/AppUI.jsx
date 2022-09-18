@@ -7,10 +7,12 @@ import { TodoCounter } from './Components/TodoCounter/TodoCounter';
 import './App.css';
 import { TodoContext } from './Context/TodoContext';
 import { useContext } from 'react';
-
+import { Modal } from './Components/Modal/index.js';
+import { CreateButton } from "./Components/CreateButton/index";
+import { TodoForm } from './Components/TodoForm';
 function AppUI () {
 
-    const {isLoading, todoFiltered, handleTodosState} = useContext(TodoContext);
+    const {isLoading, todoFiltered, handleTodosState, openModal, setOpenModal} = useContext(TodoContext);
 
     return ( 
         <React.Fragment>
@@ -35,6 +37,13 @@ function AppUI () {
 
            
             {/** Add Buttom Component **/}
+             <CreateButton setOpenModal={setOpenModal} />
+            {/** Modal **/}
+            {!!openModal && (
+                <Modal>
+                    <TodoForm />
+                </Modal>
+            )}
         </React.Fragment>
     );
 }
