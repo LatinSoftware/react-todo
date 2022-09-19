@@ -1,9 +1,11 @@
+@import '../../assets/css/colors.css';
+
 .CreateButton {
     position: fixed;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #d103fc;
+    background-color: var(--pink);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,5 +18,5 @@
 }
 
 .CreateButton--icon {
-    color: white;
+    color: var(--white);
 }

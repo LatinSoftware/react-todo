@@ -1,18 +1,16 @@
 import React from 'react'
 import "./TodoItem.css"
 
-const TodoItem = ({todo, onClick}) => {
+const TodoItem = ({todo, onClick, color}) => {
     const {text, completed} = todo;
-    const onChangeHandler = (event) => {
-        
-    }
+   
     return ( 
-        <li className='TodoItem' onClick={onClick} >
+        <li className='TodoItem' >
             <label className='TodoItem-checkbox__container'  >
                 <input type="checkbox" 
-                    onChange={onChangeHandler}
+                    onClick={onClick}
                     defaultChecked={completed} 
-                    className='TodoItem-checkbox' 
+                    className='TodoItem-checkbox TodoItem-checkbox--blue' 
                 />
                 <span>{text}</span>
             </label>

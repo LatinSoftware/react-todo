@@ -1,5 +1,8 @@
+@import '../../assets/css/colors.css';
+
 .TodoCounter {
     font-size: 24px;
     text-align: center;
-    color: #373B5E;
+    color: var(--white);
+    margin: 10px 0;
 }
