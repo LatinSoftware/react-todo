@@ -7,12 +7,11 @@ function TodoError({error}){
 
 function TodoLoading(){
     return (
-        <div className='TodoLoading-container'>
-            <span className='TodoLoading-complete-icon'></span>
-            <p className="TodoLoading-text">Cargando Todo...</p>
-            <span className="TodoLoading-delete-icon"></span>
+        <div className="LoadingTodo-container">
+          <span className="LoadingTodo-completeIcon"></span>
+          <p className="LoadingTodo-text">Cargando TODOs...</p>
         </div>
-    )
+    );
 }
 
 function TodoEmpty(){

@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import { Modal } from './Components/Modal/index.js';
 import { CreateButton } from "./Components/CreateButton/index";
 import { TodoForm } from './Components/TodoForm';
-
+import { TodoLoading } from './Components/TodoNotifications';
 import './App.css';
 
 function AppUI () {
@@ -22,7 +22,7 @@ function AppUI () {
 
             <TodoList>
                     {/** Todo Item Component **/}
-                    {isLoading && <p>Cargando...</p>}
+                    {isLoading && <TodoLoading />}
                     {!isLoading && todoFiltered.length === 0 && <p>Escribe tu primer todo</p>}
                     {todoFiltered.map(todo => (
                         <TodoItem 
